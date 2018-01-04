@@ -1,0 +1,8 @@
+tree = "*"
+
+for i in range(0, 18):
+    if i < 15:
+        print("{0:_^31}".format(tree))
+        tree += "*" + "*"
+    elif i >= 16:
+          print("{0:_^31}".format(tree[i] * 2))
