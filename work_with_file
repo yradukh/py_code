@@ -1,0 +1,23 @@
+ filename = raw_input("Введіть назву вашого файлу: ")
+
+ text = raw_input("Введіть вміст файлу тут: ")
+
+ file = open(filename, "w")
+
+ file.write(text)
+
+ new_file = open(filename, "r")
+
+ file.close()
+
+ print( new_file.read())
+
+ print("=====" * 25)
+
+ upt_file = open(filename, "a")
+
+ upt_file.write(" Test " * 15)
+
+ upt_file.close()
+
+ print(upt_file.read())
