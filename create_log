@@ -1,0 +1,28 @@
+import logging
+
+# DEBAG: HEEEELP.
+
+logging.basicConfig(filename="first_log.log", level=logging.DEBUG,
+                    format="%(asctime)s:%(levelname)s:%(message)s")
+
+def sum(x, y):
+  return x + y
+
+def multiply(x, y):
+  return x * y
+
+def divide(x, y):
+  return x / y
+
+
+x = 141
+y = 1212
+
+add = sum(x, y)
+logging.debug("add: {} + {} = {}".format(x, y, add))
+
+mult = multiply(x, y)
+logging.debug("mult: {} * {} = {}".format(x, y, mult))
+
+div = divide(x, y)
+logging.debug("div: {} / {} = {}".format(x, y, div))
